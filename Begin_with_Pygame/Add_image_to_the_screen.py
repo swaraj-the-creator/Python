@@ -3,10 +3,10 @@ pygame.init()
 SCREEN_WIDTH,SCREEN_HIEGHT = 500,500
 display_surface = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HIEGHT))
 pygame.display.set_caption('Adding image and background image')
-background_image = pygame.transform.scale(pygame.image.load('background.png').convert(),(SCREEN_WIDTH,SCREEN_HIEGHT))
-penguin_image = pygame.transform.scale(pygame.image.load('penguin.png').convert_alpha(),(200,200))
+background_image = pygame.transform.scale(pygame.image.load('/Users/swapnalipingale/Desktop/Python/Screenshot 2026-11-20 at 8.39.34 PM.png').convert(),(SCREEN_WIDTH,SCREEN_HIEGHT))
+penguin_image = pygame.transform.scale(pygame.image.load('/Users/swapnalipingale/Desktop/Python/Screenshot 2026-11-20 at 8.41.01 PM.png').convert_alpha(),(200,200))
 penguin_rect = penguin_image.get_rect(center=(SCREEN_WIDTH // 2,SCREEN_HIEGHT // 2 - 30))
-text = pygame.font.Font(None,36).render('Hello World',True,pygame.colour('black'))
+text = pygame.font.Font(None,36).render('Hello World',True,pygame.Color('black'))
 text_rect = text.get_rect(center=(SCREEN_WIDTH // 2,SCREEN_HIEGHT // 2 + 110))
 def game_loop():
     clock = pygame.time.Clock()

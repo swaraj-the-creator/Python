@@ -7,4 +7,3 @@ while not done:
         if event.type == pygame.QUIT:
             pygame.quit
     pygame.display.flip()
-    
