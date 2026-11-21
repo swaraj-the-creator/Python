@@ -2,8 +2,8 @@ import pygame
 
 pygame.init()
 
-SCREEN_WIDTH = 500
-SCREEN_HEIGHT = 500
+SCREEN_WIDTH = 1000
+SCREEN_HEIGHT = 1000
 
 display_surface = pygame.display.set_mode(
     (SCREEN_WIDTH, SCREEN_HEIGHT)
@@ -42,6 +42,10 @@ fact_text = fact_font.render(
     pygame.Color("White")
 )
 
+colo_fact_text = fact_font.render(
+    "Tigers have three colour: White,black & orange.",
+    True,
+    pygame.Color("Black"))
 fact_rect = fact_text.get_rect(
     center=(SCREEN_WIDTH // 2, 420)
 )
