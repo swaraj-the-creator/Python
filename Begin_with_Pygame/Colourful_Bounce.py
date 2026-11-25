@@ -1,7 +1,7 @@
 import pygame
 import random
 
-pygame.init
+pygame.init()
 
 SPRITE_COLOUR_CHANGE_EVENT = pygame.USEREVENT + 1
 BACKGROUND_COLOUR_CHANGE_EVENT = pygame.USEREVENT + 2
